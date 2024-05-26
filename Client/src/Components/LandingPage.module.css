@@ -1,0 +1,655 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.allBody
+{
+    background-image: url("../Images/Background\ Img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url(FrankfurterEF-Medium.otf);
+}
+
+/* **************NAVBAR CSS************************ */
+
+.mainNavbar{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.AUlogo{
+    height: 50px;
+    width: 135px;
+}
+
+.Credgrowlogo{
+    height: 70px;
+    width: 70px;
+    margin-right: 15px;
+}
+
+/******************AU MAIN TEXT CSS *************************/
+
+.AUbanktext{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AUbanktext1{
+    color: #6D276D;
+    font-family: 'MyCustomFont';
+    font-size: 50px;
+    font-weight: 100;
+}
+.AUbanktext2{
+    margin-left: 10px;
+    color: #ec691f;
+    font-family: 'MyCustomFont';
+    font-size: 50px;
+    font-weight: 100;
+}
+.AUbanksubtext{
+    font-family: "Montserrat", sans-serif;
+    color: #6D276D;
+    font-size: 20px;
+}
+/***************************MAIN BODY CSS********************************** */
+
+.mainBodyContainer{
+    margin-top: 40px;
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.leftMainBodyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 50%;
+}
+
+.kiaraAdvaniImg{
+    height: 100%;
+    width: 85%;
+    background-color: #ec691f;
+    border-radius: 50% 50% 24% 76% / 60% 33% 67% 40% ;
+}
+
+.rightMainBodyContainer{
+    /* background-color:blue; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.userDetails{
+    background-color: white;
+    height: 90%;
+    width: 75%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+}
+.userDetailsText{
+    /* background-color: red; */
+    width: 90%;
+    margin: 25px 0px 0px 25px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+.userDetails input{
+    margin: 20px 0px 0px 20px;
+    height: 50px;
+    width: 88%;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    outline: none;
+    background-color:#f0f0f0;
+}
+
+::placeholder{
+    color: black;
+}
+
+.clickCheckBox{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainCheckBox{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.checkBoxText{
+    width: 87%;
+    padding:0px 20px 0px 15px;
+    font-size: 15px;
+    /* background-color: #ec691f; */
+}
+
+.clickCheckBox input{
+    margin-bottom: 20px;
+    height:25px;
+    width: 25px;
+    accent-color: #ec691f;
+}
+
+.submitDetailBtn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submitButton{
+    width: 70%;
+    height: 35px;
+    text-align: center;
+    background-color: #6D276D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'MyCustomFont';
+    font-size: 30px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.submitButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+/* ************************CREADIT CARD BANNER******************* */
+
+
+.creditCardsBanner{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+.creditCardsImg{
+    height: 100%;
+    width: 100%;
+}
+
+/* *********************FOOTER********************** */
+
+.footerOne{
+    margin-top: 50px;
+    height: 100%;
+    margin-bottom: 30px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.footerOne h1{
+    color: #6D276D;
+}
+.footerOne p{
+    margin-top: 10px;
+    color: #ec691f;
+}
+
+.firstFooterOne{
+    height: 100%;
+    width: 25%;
+    /* background-color:green; */
+}
+
+.secondFooterOne{
+    height: 100%;
+    width: 25%;
+    /* background-color:aqua; */
+}
+
+.thirdFooterOne{
+    height: 100%;
+    width: 25%;
+    /* background-color:bisque; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************RESPONSIVE CSS****************************/
+
+
+@media screen and (max-width: 400px) {
+    .AUlogo{
+        height: 30px;
+        width: 90px;
+    }
+    .Credgrowlogo{
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .AUbanktext1{
+        font-size: 40px;
+    }
+    .AUbanktext2{
+        font-size: 40px;
+    }
+    .AUbanksubtext{
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .AUbanktext1{
+        font-size: 30px;
+    }
+    .AUbanktext2{
+        font-size: 30px;
+    }
+    .AUbanksubtext{
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .AUbanktext1{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .AUbanktext2{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .AUbanksubtext{
+        font-size: 15px;
+    }
+  }
+
+  /* //Cards Responsive */
+
+  @media screen and (max-width: 1000px) {
+
+    .userDetailsText{
+        margin: 20px 0px 0px 20px;
+        font-size: 20px;
+    }
+    .userDetails input{
+        margin: 15px 0px 0px 15px;
+        height: 40px;
+    }
+    .checkBoxText{
+        padding:10px 20px 0px 15px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+
+    .userDetailsText{
+        margin: 15px 0px 0px 15px;
+        font-size: 18px;
+    }
+    .userDetails input{
+        margin: 12px 0px 0px 12px;
+        height: 35px;
+    }
+    .checkBoxText{
+        padding:10px 20px 0px 15px;
+    }
+    .checkBoxText{
+        width: 100%;
+        padding:10px 10px 0px 15px;
+        font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+
+    .userDetailsText{
+        margin: 12px 0px 0px 12px;
+        font-size: 15px;
+    }
+    .userDetails input{
+        margin: 10px 0px 0px 10px;
+        height: 30px;
+        width: 85%;
+        font-size: 15px;
+    }
+    .checkBoxText{
+        width: 100%;
+        padding:10px 10px 0px 15px;
+        font-size: 12px;
+    }
+    .submitDetailBtn{
+        margin-top: 15px;
+    }
+    .submitButtom{
+        margin-bottom: 10px;
+    }
+    .userDetails{
+        height: 90%;
+        width: 80%;
+    }
+    .footerOne h1{
+        font-size: 20px;
+        color: #6D276D;
+    }
+    .footerOne p{
+        font-size: 12px;
+        margin-top: 10px;
+        color: #ec691f;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .userDetailsText{
+        margin: 12px 0px 0px 12px;
+        font-size: 15px;
+    }
+    .userDetails input{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    .checkBoxText{
+        width: 100%;
+        padding:10px 10px 0px 15px;
+        font-size: 10px;
+    }
+    .submitDetailBtn{
+        margin-top: 8px;
+    }
+    .submitButtom{
+        margin-bottom: 5px;
+        height: 32px;
+        font-size: 20px;
+    }
+    .userDetails{
+        height: 90%;
+        width: 80%;
+    }
+    .footerOne h1{
+        font-size: 17px;
+        color: #6D276D;
+    }
+    .footerOne p{
+        font-size: 10px;
+        margin-top: 10px;
+        color: #ec691f;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+
+    .userDetailsText{
+        margin: 10px 0px 0px 10px;
+        font-size: 13px;
+    }
+    .userDetails input{
+        font-size: 12px;
+        padding-left: 8px;
+    }
+    .checkBoxText{
+        font-size: 8px;
+    }
+    .submitDetailBtn{
+        margin-top: 7px;
+    }
+    .submitButtom{
+        margin-bottom: 5px;
+        height: 28px;
+        font-size: 18px;
+    }
+    .userDetails{
+        height: 90%;
+        width: 80%;
+    }
+    .kiaraAdvaniImg{
+        height: 100%;
+        width: 85%;
+        background-color: #ec691f;
+        border-radius: 50% 50% 24% 76% / 60% 33% 67% 40% ;
+    }
+  }
+
+  
+  @media screen and (max-width: 550px) {
+
+    .userDetailsText{
+        margin: 10px 0px 0px 10px;
+        font-size: 13px;
+    }
+    .userDetails input{
+        font-size: 12px;
+        padding-left: 8px;
+    }
+    .checkBoxText{
+        font-size: 8px;
+    }
+    .submitDetailBtn{
+        margin-top: 7px;
+    }
+    .submitButtom{
+        margin-bottom: 5px;
+        height: 28px;
+        font-size: 18px;
+    }
+    .userDetails{
+        height: 90%;
+        width: 80%;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .mainBodyContainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .leftMainBodyContainer{
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    .kiaraAdvaniImg{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .rightMainBodyContainer{
+        /* background-color:blue; */
+        width: 100%;
+    }
+    .userDetailsText{
+        /* background-color: red; */
+        width: 90%;
+        margin: 25px 0px 0px 25px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .userDetails input{ 
+        margin: 20px 0px 0px 20px;
+        height: 50px;
+        width: 87%;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    
+    .clickCheckBox{
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .mainCheckBox{
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+    }
+    
+    .checkBoxText{
+        width: 87%;
+        padding:0px 20px 0px 15px;
+        font-size: 15px;
+        /* background-color: #ec691f; */
+    }
+    
+    .clickCheckBox input{
+        margin-bottom: 20px;
+        height:25px;
+        width: 25px;
+        accent-color: #ec691f;
+    }
+    
+    .submitDetailBtn{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .submitButtom{
+        width: 70%;
+        height: 50px;
+        font-size: 30px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }   
+    .footerOne{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerOne h1{
+        font-size: 25px;
+        color: #6D276D; 
+    }
+    .footerOne p{
+        font-size: 15px;
+        margin-top: 10px;
+        color: #ec691f;
+    }
+    .firstFooterOne{
+        margin: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .secondFooterOne{
+        margin: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .thirdFooterOne{
+        margin: 20px;
+        height: 100%;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .userDetails input{ 
+        height: 40px;
+        width: 85%;
+    } 
+    .clickCheckBox{
+        margin-top: 10px;
+    }
+    .checkBoxText{
+        width: 100%;
+        padding:0px 20px 0px 15px;
+        font-size: 15px;
+    }
+    
+    .clickCheckBox input{
+        margin-bottom: 20px;
+        height:25px;
+        width: 25px;
+        accent-color: #ec691f;
+    }
+    .submitButtom{
+        width: 70%;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 400px) {
+
+    .userDetails input{ 
+        height: 35px;
+        width: 83%;
+    } 
+    .clickCheckBox{
+        height: 40px;
+        margin-top: 10px;
+    }
+    .checkBoxText{
+        width: 100%;
+        padding:0px 10px 0px 15px;
+        font-size: 12px;
+    }
+    .submitButtom{
+        width: 70%;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .userDetailsText{
+        margin-top: 20px;
+        font-size: 23px;
+    }
+  }

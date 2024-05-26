@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.989e22e6.css",
+    "main.js": "/static/js/main.d24b4550.js",
+    "static/js/453.419a5d54.chunk.js": "/static/js/453.419a5d54.chunk.js",
+    "static/media/Background Img.png": "/static/media/Background Img.a93eb0d0533c0ba7be3b.png",
+    "static/media/AUCreditCards.png": "/static/media/AUCreditCards.a73b6f033747777f36c2.png",
+    "static/media/Kiara.png": "/static/media/Kiara.9011d41ef56cec9a8be2.png",
+    "static/media/Credgrow Logo.png": "/static/media/Credgrow Logo.364c91c23a06539d8330.png",
+    "static/media/AU Logo.png": "/static/media/AU Logo.18378cc63def41fc82c6.png",
+    "static/media/FrankfurterEF-Medium.otf": "/static/media/FrankfurterEF-Medium.68f7eb84efc744b1b278.otf",
+    "index.html": "/index.html",
+    "main.989e22e6.css.map": "/static/css/main.989e22e6.css.map",
+    "main.d24b4550.js.map": "/static/js/main.d24b4550.js.map",
+    "453.419a5d54.chunk.js.map": "/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.989e22e6.css",
+    "static/js/main.d24b4550.js"
+  ]
+}
