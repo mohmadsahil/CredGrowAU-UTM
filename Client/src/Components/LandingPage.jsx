@@ -22,20 +22,34 @@ export const LandingPage = () => {
           setUser({...user,[name]:value});
       }
 
-      const registerUser = async()=>{
+        const registerUser = async()=>{
         const{name,number} = user;
 
-        if(name && (number.length === 10))
-        {
-          await axios.post("/create",user)
-          .then((res)=>{
-            window.location.href = 'https://cconboarding.aubank.in/auccself/#/landing?utm_source=dsa&utm_medium=display-agg&utm_campaign=credit-card-dsa-campaign-990237-347803-Digi';   
-          })
-        }
-        else{
-          toast.success("Kindly Fill The Full & Correct Details");
+        // if(name && (number.length === 10))
+        // {
+        //   await axios.post("/create",user)
+        //   .then((res)=>{
+        //     window.location.href = 'https://cconboarding.aubank.in/auccself/#/landing?utm_source=dsa&utm_medium=display-agg&utm_campaign=credit-card-dsa-campaign-990237-347803-Digi';   
+        //   })
+        // }
+        // else{
+        //   toast.success("Kindly Fill The Full & Correct Details");
+        // }
+
+        if (name && (number.length === 10)) {
+            try {
+                const res = await axios.post("/create", user);
+                window.location.href = 'https://cconboarding.aubank.in/auccself/#/landing?utm_source=dsa&utm_medium=display-agg&utm_campaign=credit-card-dsa-campaign-990237-347803-Digi';
+            } catch (error) {
+                // Handle the error appropriately
+                console.error("Error occurred during the axios request:", error);
+                toast.error("An error occurred while creating the user. Please try again later.");
+            }
+        } else {
+            toast.success("Kindly Fill The Full & Correct Details");
         }
   }
+
 
   //Handle CheckBox
 
