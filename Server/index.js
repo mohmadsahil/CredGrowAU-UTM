@@ -3,7 +3,6 @@ import "./DB/connections.js";
 import dotenv from "dotenv";
 import cors from "cors";
 import router from "./Routes/userRouters.js";
-// import bodyParser from "body-parser";
 import path from "path";
 
 const PORT=8000
@@ -24,7 +23,6 @@ app.use(cors({
     origin: "*",
 }));
 
-// app.use(bodyParser.json());
 app.use(router);
 
 app.listen(PORT,()=>{

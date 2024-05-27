@@ -4,10 +4,6 @@ import axios from "axios";
 import toast from 'react-hot-toast';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
-import kaira from '../Images/Kiara.png'
-import AUlogo from "../Images/AU Logo.png";
-import credLogo from "../Images/Credgrow Logo.png";
-import AUCards from "../Images/AUCreditCards.png";
 
 export const LandingPage = () => {
 
@@ -36,7 +32,7 @@ export const LandingPage = () => {
         //   toast.success("Kindly Fill The Full & Correct Details");
         // }
 
-        if (name && (number.length === 10)) {
+        if (name && (number.length === 10)){
             try {
                 const res = await axios.post("/create", user);
                 window.location.href = 'https://cconboarding.aubank.in/auccself/#/landing?utm_source=dsa&utm_medium=display-agg&utm_campaign=credit-card-dsa-campaign-990237-347803-Digi';
@@ -90,8 +86,8 @@ export const LandingPage = () => {
             {/* ******NAVBAR****** */}
             
             <div className={styles.mainNavbar}>
-                <img className={styles.AUlogo} src={AUlogo} alt="AU Logo" srcset="" />
-                <img className={styles.Credgrowlogo} src={credLogo} alt="Credgrow Logo" srcset="" />
+                <img className={styles.AUlogo} src="Images/AU Logo.png" alt="AU Logo" srcset="" />
+                <img className={styles.Credgrowlogo} src="/Images/Credgrow Logo.png" alt="Credgrow Logo" srcset="" />
             </div>
             
             <div className={styles.AUbanktext}> 
@@ -107,7 +103,7 @@ export const LandingPage = () => {
             <div className={styles.mainBodyContainer}>
 
                     <div className={styles.leftMainBodyContainer}>
-                            <img className={styles.kiaraAdvaniImg} src={kaira} alt="Kiara Advani" />
+                            <img className={styles.kiaraAdvaniImg} src="/Images/Kiara.png" alt="Kiara Advani" />
                     </div>
                     <div className={styles.rightMainBodyContainer}>
                         <div className={styles.userDetails}>
@@ -148,7 +144,7 @@ export const LandingPage = () => {
             {/* *******CREDIT CARD BANNER***************** */}
 
             <div className={styles.creditCardsBanner}>
-                    <img className={styles.creditCardsImg} src={AUCards} alt="" srcset="" />
+                    <img className={styles.creditCardsImg} src="Images/AUCreditCards.png" alt="" srcset="" />
             </div>
 
             <div className={styles.AUbanktext}> 
